@@ -17,7 +17,7 @@
         <nav class="flex justify-around items-center">
           <img class="w-16" src="assets/Group.png" alt="" />
           <div class=>
-            <h1 class="text-3xl font-bold">$4500</h1>
+            <h1 class="text-3xl font-bold">$ <span id="main-blance">4500</span></h1>
             <p class="border rounded p-1">Available blance</p>
           </div>
           <button class="btn bg-blue-700 text-white">log Out </button>
@@ -31,15 +31,15 @@
                 <h3>Add money</h3>
                 </div>
                 <div class="box border p-4 rounded ">
-                    <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
-                <h3>Pay Bill</h3>
+                    <img class="w-8 mx-auto" src="assets/send1.png" alt="">
+                <h3>CashOut</h3>
                 </div>
                 <div class="box border p-4 rounded ">
                     <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
-                <h3>Bonous</h3>
+                <h3>Pay Bill</h3>
                 </div>
                 <div class="box border p-4 rounded ">
-                    <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
+                    <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
                 <h3>Transfer Money</h3>
                 </div>
                 <div class="box border p-4 rounded ">
@@ -47,7 +47,7 @@
                 <h3>Get Bonous</h3>
                 </div>
                 <div class="box border p-4 rounded ">
-                    <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
+                    <img class="w-8 mx-auto" src="assets/money1.png" alt="">
                 <h3>Transactions History</h3>
                 </div>
             </div>
@@ -84,8 +84,17 @@
                               placeholder="Type your pin"
                               required
                             />
+                            <fieldset class="fieldset">
+                                <label class="fieldset-label">type your Amount</label>
+                                <input
+                                  id="amount"
+                                  type="number"
+                                  class="input"
+                                  placeholder="type your amount"
+                                  required
+                                />
                             <div><a class="link link-hover">Forgot password?</a></div>
-                            <button id="login-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">
+                            <button id="add-money" id="login-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">
                           Add Money
                             </button>
                           </fieldset>
@@ -96,5 +105,6 @@
         </section>
       </header>
     </section>
+    <script src="java/add-money.js"></script>
   </body>
 </html>
