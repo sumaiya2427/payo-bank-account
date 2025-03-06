@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>main</title>
+    <title>payoo!</title>
+    <link rel="shortcut icon" href="assets/Group.png" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -53,7 +54,7 @@
             </div>
         </section>
         <!-- add money section -->
-        <section class="add-money">
+        <section id="add-money-section">
             <h2>Add money</h2>
             <div class=>
                 <div class="hero-content flex-col lg:flex-row-reverse">
@@ -86,7 +87,6 @@
                               placeholder="Type your pin"
                               required
                             />
-                            <fieldset class="fieldset">
                                 <label class="fieldset-label">type your Amount</label>
                                 <input
                                   id="amount"
@@ -99,52 +99,61 @@
                             <button id="add-money" id="login-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">
                           Add Money
                             </button>
-                          </fieldset>
-                          <!-- cashout -->
-                          <section id="cashout">
-                            <h2>Cashout</h2>
-                             <fieldset class="fieldset">
-                               <label class="fieldset-label">type your number</label>
-                               <input
-                               value="01325888065"
-                                 id="account-number"
-                                 type="number"
-                                 class="input"
-                                 placeholder="Enter your number"
-                                 required
-                               />
-                               <label class="fieldset-label">pin</label>
-                               <input
-                               value="1234"
-                                 id="pin"
-                                 type="text"
-                                 class="input"
-                                 placeholder="Type your pin"
-                                 required
-                               />
-                               <fieldset class="fieldset">
-                                   <label class="fieldset-label">type your Amount</label>
-                                   <input
-                                     id="amount"
-                                     type="number"
-                                     class="input"
-                                     placeholder="type your amount"
-                                     required
-                                   />
-                               <div><a class="link link-hover">Forgot password?</a></div>
-                               <button id="Cashout" id="login-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">
-                       Cash Out
-                               </button>
-                             </fieldset>
-                           </section>
+                          </fieldset>    
                     </div>
                   </div>
                 </div>
               </div>
         </section>
+        <!-- cash out section -->
+        <section id="cashout">
+          <h1 class="text-center">Cash Out</h1>
+          <div class=>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              
+              <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="fieldset-label">type your number</label>
+            <input
+            value="01325888065"
+              id="account-number"
+              type="number"
+              class="input"
+              placeholder="Enter your number"
+              required
+            />
+            <label class="fieldset-label">pin</label>
+            <input
+            value="1234"
+              id="cash-pin"
+              type="text"
+              class="input"
+              placeholder="Type your pin"
+              required
+            />
+                <label class="fieldset-label">type your Amount</label>
+                <input
+                  id="cash-amount"
+                  type="number"
+                  class="input"
+                  placeholder="type your amount"
+                  required
+                />
+            <div><a class="link link-hover">Forgot password?</a></div>
+            <button id="cashout-btn" id="login-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">
+         cash out
+            </button>
+          </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </header>
     </section>
     <script src="java/add-money.js"></script>
     <script src="java/toggle.js"></script>
+    <script src="java/cashout.js"></script>
   </body>
 </html>
